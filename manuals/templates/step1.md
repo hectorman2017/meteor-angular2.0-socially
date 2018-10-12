@@ -157,7 +157,8 @@ Now, we can use it inside of the component:
 
 {{{diff_step 1.5}}}
 
-> Note that a warning will be shown by the TypeScript compiler during compilation time, saying: "Cannot find module './app.html'. This is a known issue of the TypeScript compiler and should be fixed somewhen soon. Expect similar warnings as you go further with this tutorial; As for now, just ignore them."
+> Note that a warning will be shown by the TypeScript compiler during compilation time, saying: "Cannot find module './app.html'. This is a known issue of the TypeScript compiler and should be fixed somewhen soon. Expect similar warnings as you go further with this tutorial; As for now, just ignore them." 
+Another alternative to avoid the warning instead is not to include the next line: import template from './app.component.html';  and you need to put this line inside the @Component: templateUrl: './app.component.html'. So in this way it runs without any problem.
 
 **About templates**
 
